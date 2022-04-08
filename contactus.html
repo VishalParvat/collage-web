@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University - Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="revise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d917f7f796.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/vishal.JPG">
+
+
+
+<body>
+    <section class="sub-header">
+        <nav class="nav-bar">
+            <a href="index.html"><img src="images/logo.png" alt="Website logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-remove" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-navicon" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14236.998169704131!2d85.0983455!3d26.8638117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4eefc4eace663af!2sVishal%20General%20Store!5e0!3m2!1sen!2sin!4v1649387728929!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contactus">
+        <div class="row">
+            <div class="con-col left">
+                <div>
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Banglore Karnatka IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>9262237004</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i> 
+                    <span>
+                        <h5>vishalparvat.in@gmail.com</h5>
+                        <p>E-mail us Your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="con-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name">
+                    <input type="email" name="e-mail" placeholder="Enter Your E-mail">
+                    <input type="text" name="subject" placeholder="Enter Your Subject">
+                    <textarea name="messages" id="" cols="" rows="5"></textarea>
+                    <button class="hero-btn red-btn-+">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- -------footer section ----------  -->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo minima,<br> ipsa, a at quam impedit quod,
+            temporibus qui nihil maxime laudantium distinctio! Velit.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>This Website is Developed by
+            <span class="parvat"> Vishal Parvat</span>
+        </p>
+    </section>
+
+
+    <!-- ----javascript code for toggle menu----- -->
+    <script>
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+        }
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+
+    </script>
+</body>
+
+</html>

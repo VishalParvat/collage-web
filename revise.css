@@ -1,0 +1,20 @@
+.vishal {
+
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.png);
+
+    transform: translate(50%, 40%);
+
+    flex-basis: 30%;
+
+
+
+}
+
+sfds.cta a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    display: inline-block;
+    margin-top: 40px;
+}
